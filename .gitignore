@@ -1,0 +1,7 @@
+# Linux
+*.
+!.gitignore
+*~
+
+dam-2014.sublime-project
+dam-2014.sublime-workspace
