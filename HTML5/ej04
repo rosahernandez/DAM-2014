@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo tipos de imput</title>
+        <script type="text/javascript"></script>
+        <script src="../vendor/modernizr.cstom.49459.js"></script>
+    </head>
+    <body>
+        <form method="post">
+            <label>Rango</label>
+            <input type="range" mix="0" max="100" step="5">
+            <label>Fecha</label>
+            <input type="date" min="2014-01-01" max="2014-12-31">
+            <label>Multiple</label>
+            <input type="file" multiple="multiple">
+            <label>Placeholder</label>
+            <input type="text" name="first_name" placeholder="Your first name..."
+            <label>List</label>
+            <input id="form-person-title" type="text" list="mylist">
+            <datalist id="mylist">
+                <option label="Mr" value="Mr">
+                <option label="Ms" value="Ms">
+                <option label="Prof" value="Mad Professor">
+            </datalist>
+            <label>Color</label>
+            <input id="color" type="color">
+            <label>Busqueda</label>
+            <input type="search">
+            <label>Telefono</label>
+            <input type="tel">
+            <label>Email</label>
+            <input type="email">
+            <label>Url</label>
+            <input type="url">
+            <label>Time</label>
+            <input type="time">
+            <label>Datetime</label>
+            <input type="datetime">
+            <label>Month</label>
+            <input type="month">
+            <label>Week</label>
+            <input type="week">
+            <label>Number</label>
+            <input type="number" name="quantity" min="1" max="5">
+            <label>Autofocus</label>
+            <input type="text" autofocus="autofocus">
+            <label>Autocomplete</label>
+            <input type="text" autocomplete="autocomplete">
+            <label>Required</label>
+            <input type="text" required="required">
+            <input id="submit" type="submit" name="submit" value="Enviar"/>
+        </form>
+        <script src="..js/estilo.js"></script>
+    </body>
+</html>

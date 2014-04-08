@@ -1,0 +1,36 @@
+
+*{
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    width: 400px;
+}
+
+ul li{
+    position: relative;
+}
+
+
+ul li ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+ul li:hover ul {
+    display: block;
+}
+
+ul.horizontal> li{
+    display: inline-block;
+}
+
+/*
+ul.horizontal>li{
+    float: left;
+}
+*/

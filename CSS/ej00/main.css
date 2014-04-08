@@ -1,0 +1,249 @@
+*{border: 1px solid: #000;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color:#F7F7F7;
+    /*14pt, 20.72 interlineado sourcesanspro color 46 46 46 */
+}
+
+body{
+    font: 14pt/1.48em "Source Sans Pro", sans-serif;
+    color:#464646;
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+.txt-rojo{
+    color: rgb(250, 0, 0);
+}
+
+h1, .h1{
+    font-size: 2em; /* 28pt/14pt */
+    line-heigth: 1.00em;
+    text-trasform: uppercase;
+    font-weight: normal;
+}
+
+table{
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+}
+
+/*textos*/
+.bold{font-weight: bold;}
+.italic{font-style:italic;}
+.normal{font-weight: normal;}
+.small(font-size: 0.8em;)
+.big{font-size: 1.5em;}
+.uppercase{text-trasform: uppercase;}
+.list p{margin:0;}
+.list li{padding:20px,0;}
+.list li h3{color:#7cbcf3; font-style: italic;}
+.list-blue li{
+    background: transparent url("../img/blue.png") no-repeat 0 10px;
+    padding-left:20px;
+}
+.center{
+    text-align: center;
+}
+.list{
+    list-style: none;
+    padding: 0;
+}
+.bg-white{
+    background-color:#FFF;
+}
+
+.price{
+    font-size;1.5em;
+    font-weight:bold;
+
+}
+/*TODO*/
+.list-blue{
+    padding-left: 20px;
+}
+
+.breadcrum{
+    text-trasform: uppercase;
+}
+
+.breadcrum .actual,
+.menu .actual{
+    color: red;
+}
+
+/*layout*/
+.centrado{
+    width: 90%;
+    margin: 0 auto;
+    padding: 4.04% 0;  /*40px + 940px*/
+}
+
+.centrado: before, .centrado:afer,
+.clearfix:before, clearfix:after{
+    content:"";
+    display:table;
+}
+
+.centrado:after,
+.clearfix:after{
+    clear:both;
+}
+/*para explorer*/
+.centrado{
+    zoom:1;
+}
+/*Cabecera*/
+.breadcrum{
+    text-trasform: uppercase;
+    list-style:none;
+    padding: 0;
+}
+.fleft{float: left;}
+.col-25{width:25%;}
+.col-50{width:50%;}
+.col-75{width:75%;}
+
+.col-25{width:25%;}
+.col-25{width:25%;}
+
+.txt-blue{color:#03f;}
+.overflowx{overflow-x:scroll; }
+.breadcrum li{
+    display: inline-block;
+}
+
+.breadcrum li:after{
+    content:"/";
+}
+
+.breadcrum li.actual:after{
+    content:"";
+}
+
+.breadcrum a{
+    margin-rigth: 5px;
+}
+
+.marco{
+    background-color:#FFF;
+    padding:10px;
+    box-shadow:0 0 5px #cdcdcd;
+}
+
+/*botones*/
+.btn{
+    color:#FFFF;
+    text-trasform:uppercase;
+    display:inline-block;
+    width:100px;
+    border-radius:5px;;
+    box-shadow:0 3px 5px #cdcdcd;
+    background-image: linear-gradient(to botton, #999, #CCC;
+    margin; 0 5px;
+}
+
+.btn-rojo{
+    background-image: linear-gradient(to botton, f74040 80%, #d33535);
+}
+
+.btn-big{
+    padding:10px, inherit;
+}
+
+.description{
+    padding-left:20px;
+}
+
+.bg-gray:first-child .wrapper{
+    padding:0;
+}
+
+.read-more{
+    display: none;
+}
+/*version tablet*/
+@media screem and (max-width: 768px){
+        .centrado{
+            padding: 2% 0;
+        }
+        .cabecera .col-25{
+            width: 40%;
+        }
+        .cabecera .col-75{
+            width: 75%;
+        }
+        .description{
+            height: 290px;
+            overflow: hidden;
+        }
+        .read-more{
+            display: block;
+        }
+        h1 .h1{
+            font-size: 1.6em;
+            text-transform: none;
+        }
+
+        .well .precio{
+            float: none;
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .well .btn-big{
+            float: none;
+            display:block;
+            width: 100%
+        }
+
+        .list li h4{
+            float: none;
+            width: 100%
+        }
+
+        .list li p{
+            float: none;
+            width: 100%;
+        }
+}
+
+/*version movil*/
+@media screem and (max-width: 480px){
+    .centrado{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .breadcrum{
+        float: left;
+    }
+
+    .navbar-toggle{
+        display: block;
+    }
+    [class*="col-"]{
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+    .col-25.well{
+
+    }
+}
+

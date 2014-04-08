@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Informacion sobre el producto</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos basicos</legend>
+                <label for="nom">Nombre</label><br/>
+                <input id="nom" type="text" name="nombre" value=""/>
+                <label for="desc">Descriocion</label>
+                <input id="desc" tyoe="textarea" name="direccion" cols="50" rows="5"/>
+                <label for="selfoto">Foto</label>
+                <input id="selfoto" type="file" name="foto">
+                <input id="contvisitas" type="checkbox" name="visitas" value="1"/>
+                <label for="contvisitas">Añadir contador de visitas</label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos economicos</legend>
+                    <label for="precio">Precio</label>
+                    <input id="precio" type="text" name="precio" value=""/>€
+                    <label for="impuestos">Impuestos</label>
+                    <select id="impuestos">
+                        <option value="1">40%</option>
+                        <option value="2">50%</option>
+                        <option value="3">60%</option>
+                        <option value="4">70%</option>
+                    </select>
+                    <label>Promocion</label><br/>
+                    <input id="promo1" type="radio" name="promo" value="1"/>
+                    <label for="promo1">Ninguno</label>
+                    <input id="promo2" type="radio" name="promo" value="2"/>
+                    <label for="promo2">Transporte gratuito</label>
+                    <input id="promo3" type="radio" name="promo" value="3"/>
+                    <label for="promo3">Descuento 5%</label>
+            </fieldset>
+            <input type="submit" name="enviar" value="Enviar">
