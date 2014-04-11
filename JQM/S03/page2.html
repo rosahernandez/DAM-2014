@@ -29,6 +29,7 @@
 	<div role="main" class="ui-content">
 		<p>I'm first in the source order so I'm shown as the page.</p>
 		<p>View internal page called <a href="#page2-view2" data-transition="slide">page2-view2</a></p>
+
 	</div><!-- /content -->
 
 	<footer data-role="footer" data-position="fixed">
@@ -47,16 +48,28 @@
 	<section id="panel" data-role="panel" data-display="overlay" data-position="right">
 		<p>This is my panel</p>
 		<p></p>
+		<a href="#index" data-rel="close" data-role="button" data-icon="delete">Close panel</a>
 	</section>
 
 	<div role="main" class="ui-content">
 		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
 		<p><a href="#page2-view1" data-rel="back" data-direction="reverse" data-role="button" data-icon="back">Back</a></p>
-    </div><!-- /content -->
+	</div><!-- /content -->
 
 	<footer data-role="footer" data-position="fixed">
 	</footer><!-- /footer -->
-	<script src="js/main.js"></script>
 </div><!-- /page -->
+
+<div data-role="page" id="page2-view3">
+    <ul data-role="listview">
+        <li><a href="acura.html">Acura</a></li>
+        <li><a href="audi.html">Audi</a></li>
+        <li><a href="bmw.html">BMW</a></li>
+    </ul>
+</div>
+
+<script src="js/main.js"></script>
 </body>
+
+
 </html>
