@@ -40,8 +40,11 @@ $(function () {
     socket.onerror  = function(e){ consolo.log("error - status "+this.readyState); };
 
     socket.onmessage = function(event) {
-        var $data = JSON.parse(event.data);
-        console.log($data);
+        try {
+            var $data = JSON.parse(event.data);
+        } catch (e) {}
+            console.log($data);
+        }
         if ($data.type === "color") {
             console.log("tipo dato type");
             $status.text(myName).css('color', $data.data);
