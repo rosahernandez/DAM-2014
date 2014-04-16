@@ -1,7 +1,7 @@
 require.config({
     paths: {
         jquery: '../bower_components/jquery/dist/jquery',
-        'gk-jquetymobile': '../bower_components/gk-jquetymobile/js/utils',
+        'ydn-db': '../bower_components/ydn-db/jsc/ydn.db-dev',
         bootstrapAffix: '../bower_components/bootstrap/js/affix',
         bootstrapAlert: '../bower_components/bootstrap/js/alert',
         bootstrapButton: '../bower_components/bootstrap/js/button',
@@ -16,6 +16,9 @@ require.config({
         bootstrapTransition: '../bower_components/bootstrap/js/transition'
 },
     shim: {
+        'ydn-db' :{
+            exports : 'ydn'
+        }
         bootstrapAffix: {
             deps: ['jquery']
         },
