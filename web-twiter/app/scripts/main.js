@@ -18,7 +18,7 @@ require.config({
     shim: {
         'ydn-db' :{
             exports : 'ydn'
-        }
+        },
         bootstrapAffix: {
             deps: ['jquery']
         },
