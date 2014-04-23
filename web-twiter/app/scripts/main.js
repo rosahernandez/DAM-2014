@@ -2,6 +2,7 @@ require.config({
     paths: {
         jquery: '../bower_components/jquery/dist/jquery',
         'ydn-db': '../bower_components/ydn-db/jsc/ydn.db-dev',
+        'handlebars': '../bower_components/handlebars/dist/handlebars',
         bootstrapAffix: '../bower_components/bootstrap/js/affix',
         bootstrapAlert: '../bower_components/bootstrap/js/alert',
         bootstrapButton: '../bower_components/bootstrap/js/button',

@@ -1,6 +1,7 @@
 define('data', ['ydn-db'], function() {
 
-    var db = new ydn.db.Storage('twiter-db');
+    var db = new ydn.db.Storage('twiter-db'),
+        tweetTable = 'twits';
 
     var insertarTwit = function(twit, success, callback){
         //crear el almacen
@@ -14,6 +15,16 @@ define('data', ['ydn-db'], function() {
     var obtenerTwit = function(id, success, callback){
         //crear el almacen
         var req = db.get('twits', id);
+        req.done(function(tweet){
+            success(tweet);
+        });
+        req.fail(callback);
+
+    };
+
+    var obtenerTodos = function(success, callback){
+        //crear el almacen
+        var req = db.values('twits');
         req.done(function(tweet){
             success(tweet);
         });
@@ -65,6 +76,7 @@ define('data', ['ydn-db'], function() {
 
         insertarTwit : insertarTwit,
         obtenerTwit: obtenerTwit,
+        obtenerTodos: obtenerTodos,
         eliminarTwit: eliminarTwit,
         updateTweet : updateTweet,
         removeTweet : removeTweet,
